@@ -8,6 +8,7 @@ import Login from "./Login"
 function App() {
   const [isproduct, setIsproduct] = useState([])
   const [ispurchased, setIspurchased] = useState([])
+  const [isSearch, setIsSearch] = useState('')
 
   function handleUpdatePurchase(allPurchases) {
     setIspurchased(allPurchases)
@@ -43,7 +44,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={ <Login  /> } />
-        <Route exact path="/home" element={ <ProjectPage addSinglePurchase={addSinglePurchase} isproduct={isproduct} handleUpdatePurchase={handleUpdatePurchase} /> } />
+        <Route exact path="/home" element={ <ProjectPage addSinglePurchase={addSinglePurchase} isproduct={isproduct} handleUpdatePurchase={handleUpdatePurchase} isSearch={isSearch} setIsSearch={setIsSearch}/> } />
         <Route exact path="/purchased" element={<Purchased ispurchased={ispurchased} handleUpdatePurchase={handleUpdatePurchase}/>} />
         <Route exact path="/sellers" element={<Seller />} />
      </Routes>

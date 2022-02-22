@@ -32,7 +32,7 @@ function PurchasedBoolean({pur, handleUpdatePurchase}){
 
     return(
         <>
-        <p>{pur.business_product.name} --- {pur.purchase ? "Purchased" : <><button onClick={handlePurchase}>Buy</button> <button onClick={handleRemove}>Remove</button></>} </p>
+        <p>{pur.business_product.name} --- {pur.purchase ? "Purchased" : <><button onClick={handlePurchase}>Repurchase</button> <button onClick={handleRemove}>Remove</button></>} </p>
         </>
     )
 }
