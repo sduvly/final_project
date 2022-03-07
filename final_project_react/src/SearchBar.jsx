@@ -3,16 +3,16 @@
 
 function SearchBar({isSearch, setIsSearch}){
     
-    function searchMeal(e){
+    function searchProduct(e){
         console.log(e.target.value)
         setIsSearch(e.target.value)
     }
 return (<div className="search">
     <input 
             type="text" 
-            placeholder="Country name...." 
+            placeholder="Product name...." 
             name="search"
-            onChange={searchMeal}
+            onChange={searchProduct}
             value={isSearch}
     />
    

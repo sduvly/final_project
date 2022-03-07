@@ -3,9 +3,9 @@ import {useState} from 'react'
 function Seller(props){
     const [isform, setisform] = useState({
         name: "",
-        image: "",
         price: "",
-        businessName: "",
+        businessId: "",
+        image: "",
         description: "",
         stock: "",
         rating: "",

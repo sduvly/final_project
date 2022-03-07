@@ -4,7 +4,7 @@ import SearchBar from "./SearchBar"
 
 
 function ProjectPage({isproduct, handleUpdatePurchase, addSinglePurchase, isSearch, setIsSearch}){
-    let searchPage = isproduct.filter(s => s.Area.toLowerCase().includes(isSearch))
+    let searchPage = isproduct.filter(s => s.name.toLowerCase().includes(isSearch))
     return(
         <>
            
