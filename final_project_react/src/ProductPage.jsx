@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard"
 import SearchBar from "./SearchBar"
-import ShoppingCart from "./ShoppingCart"
+
 
 
 
@@ -11,7 +11,7 @@ function ProjectPage({isproduct, handleUpdatePurchase, addSinglePurchase, isSear
            
           <SearchBar isSearch={isSearch} setIsSearch={setIsSearch}/> 
          {searchPage.map(p => <ProductCard  key={p.id} business_product={p} addSinglePurchase={addSinglePurchase} handleUpdatePurchase={handleUpdatePurchase} />)}
-         <ShoppingCart />
+         
         </>
     )
 }

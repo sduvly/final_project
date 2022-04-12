@@ -51,4 +51,7 @@ span {
 img {
   max-width: 200px;
 }
-
+.shop{
+  background-position: right;
+  align-items: right;
+}

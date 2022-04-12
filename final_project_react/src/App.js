@@ -5,6 +5,8 @@ import Seller from "./Seller"
 import Navbar from "./Navbar"
 import {Route, Routes} from "react-router-dom"
 import Login from "./Login"
+import ShoppingCart from "./ShoppingCart"
+
 function App() {
   const [isproduct, setIsproduct] = useState([])
   const [ispurchased, setIspurchased] = useState([])
@@ -41,6 +43,7 @@ function App() {
       <div className='header'>
       <h1>OSAOS</h1>
       </div>
+      <div className='shop'> <ShoppingCart /></div>
       <Navbar />
       <Routes>
         <Route exact path="/" element={ <Login  /> } />
