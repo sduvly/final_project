@@ -33,7 +33,7 @@ function Seller(props){
     
     }
     return(
-        <>
+        <div className="form">
 <div className="mb-3">
   <label htmlFor="formGroupExampleInput" className="form-label">Name</label>
   <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Name" onChange={handleChange} 
@@ -75,7 +75,7 @@ function Seller(props){
     onChange={handleSubmit}  
     />
         
-        </>
+        </div>
     )
 }
 

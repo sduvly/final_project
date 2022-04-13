@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function Navbar(){
     
     return(
-        <>
+        <div className="nav">
  <nav className="navbarnavbar-expand-lg navbar-light bg-light">
   <div className="container-fluid">
     {/* <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@ function Navbar(){
   </div>
 </nav>
            
-        </>
+        </div>
 
     )
 }

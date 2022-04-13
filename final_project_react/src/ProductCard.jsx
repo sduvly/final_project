@@ -31,7 +31,7 @@ function ProductCard({business_product, addSinglePurchase}){
    
 
     return(
-          <>
+          <div className="proCard">
 
 
              <div className="grid">
@@ -41,7 +41,7 @@ function ProductCard({business_product, addSinglePurchase}){
              </div>
              <button onClick={addToCart}>Buy</button>
            {isvisible ?  <PageDetail stock={business_product.product.stock} rating={business_product.product.rating} description={business_product.product.description}/>: null }
-        </>
+        </div>
     )
 }
 

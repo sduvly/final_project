@@ -51,7 +51,15 @@ span {
 img {
   max-width: 200px;
 }
-.shop{
-  background-position: right;
-  align-items: right;
+.shopping{
+  background-color: #f9fdf7;
+  align-items: end;
+  color: #fffdfe;
+  min-height: 15px;
+  position:absolute; 
+  left:1422px; 
+  top:20px;
 }
+
+
+

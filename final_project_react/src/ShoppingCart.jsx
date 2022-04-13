@@ -2,8 +2,8 @@ import { Button, Icon } from 'semantic-ui-react'
 
 function ShoppingCart(){
     return(
-      <>
-      <div>
+      <div className="shopCart">
+      <div className="shopping">
     
     <Button animated='vertical'>
       <Button.Content hidden>🛒</Button.Content>
@@ -13,7 +13,7 @@ function ShoppingCart(){
     </Button>
 
   </div>
-      </>
+      </div>
     )
 }
 

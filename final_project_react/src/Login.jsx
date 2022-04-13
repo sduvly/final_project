@@ -31,7 +31,7 @@ function Login(){
     }
 
     return(
-        <>
+        <div className="firstPage">
         <div className="form-floating mb-3">
            <input type="email" className="form-control" id="floatingInput" placeholder="username" onChange={change} 
            name="username" value={islogin.username}/>
@@ -43,7 +43,7 @@ function Login(){
            <label htmlFor="floatingPassword">Password</label>
            </div>
            <button type="submit" onChange={handleSubmit} >Login</button>
-        </> 
+        </div> 
     )
 }
 export default Login
