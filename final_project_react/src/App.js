@@ -11,13 +11,17 @@ function App() {
   const [isproduct, setIsproduct] = useState([])
   const [ispurchased, setIspurchased] = useState([])
   const [isSearch, setIsSearch] = useState('')
-
+  const [isShoppingCart, setIsShoppingCart] = useState([])
   function handleUpdatePurchase(allPurchases) {
     setIspurchased(allPurchases)
   }
 
   function addSinglePurchase(newPurchase) {
     setIspurchased(ispurchased => [newPurchase, ...ispurchased])
+  }
+
+  function addItemShoppingCart(newItem){
+    setIsShoppingCart(isShoppingCart => [newItem, ...isShoppingCart])
   }
 
   useEffect(() => {
