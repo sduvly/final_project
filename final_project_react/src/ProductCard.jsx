@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import PageDetail from './PageDetail'
+import React from 'react'
 
 
 function ProductCard({business_product, addSinglePurchase}){
@@ -37,7 +38,7 @@ function ProductCard({business_product, addSinglePurchase}){
              <div className="grid">
              <div className="g-col-6 g-col-md-4" >{business_product.name}</div>
              <div className="g-col-6 g-col-md-4">{business_product.price}$</div>
-             <img className="g-col-6 g-col-md-4" onClick={click} src={business_product.image} />
+             <img className="g-col-6 g-col-md-4" alt=""onClick={click} src={business_product.image} />
              </div>
              <button onClick={addToCart}>Buy</button>
            {isvisible ?  <PageDetail stock={business_product.product.stock} rating={business_product.product.rating} description={business_product.product.description}/>: null }

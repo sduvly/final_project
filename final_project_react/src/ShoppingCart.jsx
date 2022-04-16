@@ -1,4 +1,5 @@
 import { Button, Icon } from 'semantic-ui-react'
+import React from 'react'
 
 function ShoppingCart(){
     return(

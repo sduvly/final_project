@@ -1,5 +1,6 @@
 import ProductCard from "./ProductCard"
 import SearchBar from "./SearchBar"
+import React from 'react'
 
 
 

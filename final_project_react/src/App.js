@@ -6,12 +6,13 @@ import Navbar from "./Navbar"
 import {Route, Routes} from "react-router-dom"
 import Login from "./Login"
 import ShoppingCart from "./ShoppingCart"
+import React from 'react'
 
 function App() {
   const [isproduct, setIsproduct] = useState([])
   const [ispurchased, setIspurchased] = useState([])
   const [isSearch, setIsSearch] = useState('')
-  const [isShoppingCart, setIsShoppingCart] = useState([])
+  // const [isShoppingCart, setIsShoppingCart] = useState([])
   function handleUpdatePurchase(allPurchases) {
     setIspurchased(allPurchases)
   }
@@ -20,9 +21,9 @@ function App() {
     setIspurchased(ispurchased => [newPurchase, ...ispurchased])
   }
 
-  function addItemShoppingCart(newItem){
-    setIsShoppingCart(isShoppingCart => [newItem, ...isShoppingCart])
-  }
+  // function addItemShoppingCart(newItem){
+  //   setIsShoppingCart(isShoppingCart => [newItem, ...isShoppingCart])
+  // }
 
   useEffect(() => {
     fetch("http://localhost:3000/business_products")

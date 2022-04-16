@@ -1,3 +1,4 @@
+import React from 'react'
 
 import PurchasedBoolean from "./PurchasedBoolean"
 function Purchased({ispurchased, handleUpdatePurchase}){
